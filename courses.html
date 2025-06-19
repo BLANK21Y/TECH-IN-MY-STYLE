@@ -816,7 +816,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <h2><a href="index.html">TECH IN MY STYLE</a></h2>
+                <h2><a href='/'>TECH IN MY STYLE</a></h2>
             </div>
             
             <!-- Mobile Header Controls -->
@@ -837,11 +837,11 @@
             <!-- Desktop Navigation -->
             <nav class="nav">
                 <div class="nav-links" id="navLinks">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="courses.html" class="nav-link active">Courses</a>
-                    <a href="certifications.html" class="nav-link">Certifications</a>
-                    <a href="about-us.html" class="nav-link">About Us</a>
-                    <a href="stay-connected.html" class="nav-link">Stay Connected</a>
+                    <a class='nav-link' href='/'>Home</a>
+                    <a class='nav-link active' href='/courses'>Courses</a>
+                    <a class='nav-link' href='/certifications'>Certifications</a>
+                    <a class='nav-link' href='/about-us'>About Us</a>
+                    <a class='nav-link' href='/stay-connected'>Stay Connected</a>
                 </div>
                 <div class="theme-toggle">
                     <i class="fas fa-sun"></i>
@@ -915,7 +915,7 @@
                         <i class="fab fa-css3-alt"></i>
                     </div>
                     <div class="course-content">
-                        <h3>CSS </h3>
+                        <h3>CSS</h3>
                         <p>Create stunning designs and layouts with advanced CSS techniques and frameworks</p>
                         <button class="btn course-btn">Visit Course</button>
                     </div>
@@ -934,27 +934,16 @@
 
                 <div class="course-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="course-image">
-                       <i class="fas fa-robot"></i>
+                        <i class="fab fa-java"></i>
                     </div>
                     <div class="course-content">
-                        <h3>Machine Learning</h3>
-                        <p>Build, Train, Test, Validate and learn</p>
+                        <h3>Java</h3>
+                        <p>Master object-oriented programming with Java</p>
                         <button class="btn course-btn">Visit Course</button>
                     </div>
                 </div>
 
                 <div class="course-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="course-image">
-                         <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="course-content">
-                        <h3>Data Science</h3>
-                        <p>Explore the world of Data</p>
-                        <button class="btn course-btn">Visit Course</button>
-                    </div>
-                </div>
-
-                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
                     <div class="course-image">
                         <i class="fab fa-python"></i>
                     </div>
@@ -965,9 +954,20 @@
                     </div>
                 </div>
 
+                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Machine Learning</h3>
+                        <p>Build, Train, Test, Validate and learn</p>
+                        <button class="btn course-btn">Visit Course</button>
+                    </div>
+                </div>
+
                 <div class="course-card" data-aos="fade-up" data-aos-delay="700">
                     <div class="course-image">
-                      <i class="fas fa-project-diagram"></i>
+                        <i class="fas fa-project-diagram"></i>
                     </div>
                     <div class="course-content">
                         <h3>Deep Learning</h3>
@@ -989,6 +989,17 @@
 
                 <div class="course-card" data-aos="fade-up" data-aos-delay="900">
                     <div class="course-image">
+                         <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>Data Science</h3>
+                        <p>Explore the world of Data</p>
+                        <button class="btn course-btn">Visit Course</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="course-image">
                        <i class="fab fa-js-square"></i>
                     </div>
                     <div class="course-content">
@@ -998,7 +1009,18 @@
                     </div>
                 </div>
 
-                <div class="course-card" data-aos="fade-up" data-aos-delay="1000">
+                <div class="course-card" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="course-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="course-content">
+                        <h3>C Programming</h3>
+                        <p>Master the fundamentals of C programming language</p>
+                        <button class="btn course-btn">Visit Course</button>
+                    </div>
+                </div>
+
+                <div class="course-card" data-aos="fade-up" data-aos-delay="1200">
                     <div class="course-image">
                         <span style="position: relative; display: inline-block;">
                             <i class="fas fa-user" style="position: absolute; left: 0; top: 0;"></i>
@@ -1284,26 +1306,29 @@
             }
         });
 
-        // Course URLs mapping
+        // Course URLs mapping - Updated with your provided URLs
         const courseUrls = {
             'HTML Fundamentals': 'https://html-in-my-style.netlify.app',
-            'CSS ': 'https://css-in-my-style.netlify.app',
-            'JavaScript-basic': 'https://javascript-in-my-style-basic.netlify.app',
-            'JavaScript-advanced': 'https://javascript-in-my-style-advanced.netlify.app',
+            'CSS': 'https://css-in-my-style.netlify.app',
+            'JavaScript': 'https://javascript-in-my-style-basic.netlify.app',
+            'JavaScript Advanced': 'https://javascript-in-my-style-advanced.netlify.app',
+            'Java': 'https://java-in-my-style.netlify.app',
+            'Python': 'https://python-in-my-styles.netlify.app',
             'Machine Learning': 'https://ml-in-my-style.netlify.app',
             'Data Science': 'https://datascience-in-my-style.netlify.app',
-            'Python': 'https://python-in-my-styles.netlify.app',
             'Deep Learning': 'https://deeplearning-in-my-style.netlify.app',
             'Artificial Intelligence': 'https://ai-in-my-style.netlify.app',
-            'Natural Language Processing': '#'
+            'C Programming': 'https://c-in-my-style.netlify.app',
+            'Natural Language Processing': '#' // Coming soon
         };
 
-        // Course Enrollment with Redirect
+        // Course Enrollment with Redirect - Updated Logic
         document.querySelectorAll('.course-btn').forEach(button => {
             button.addEventListener('click', function() {
                 const courseCard = this.closest('.course-card');
                 const courseName = courseCard.querySelector('h3').textContent.trim();
                 
+                // Add ripple effect
                 const ripple = document.createElement('span');
                 ripple.classList.add('ripple');
                 this.appendChild(ripple);
@@ -1312,13 +1337,16 @@
                     ripple.remove();
                 }, 600);
                 
+                // Handle coming soon courses
                 if (this.textContent.trim() === 'Coming Soon') {
                     alert(`${courseName} is coming soon! Stay tuned for updates.`);
                     return;
                 }
                 
+                // Get the course URL
                 const courseUrl = courseUrls[courseName];
                 
+                // Redirect to course URL
                 if (courseUrl && courseUrl !== '#') {
                     window.open(courseUrl, '_blank');
                 } else {
@@ -1362,13 +1390,22 @@
         });
 
         console.log(`
-        🎓 COURSES PAGE - Mobile Theme Toggle Fixed!
+        🎓 COURSES PAGE - Complete with Course Redirects!
            
-           ✅ Mobile Theme Toggle Now Visible in Header
-           ✅ Desktop & Mobile Toggles Synced
-           ✅ Course Redirects Working
-           ✅ No Horizontal Scroll
-           ✅ Perfect Mobile Experience
+           ✅ All Course URLs Updated
+           ✅ Visit Course Buttons Work
+           ✅ Opens in New Tab
+           ✅ Mobile Responsive
+           ✅ Theme Toggle Working
+           
+           Course URLs Active:
+           • HTML → html-in-my-style.netlify.app
+           • CSS → css-in-my-style.netlify.app  
+           • JavaScript → javascript-in-my-style-basic.netlify.app
+           • JavaScript Advanced → javascript-in-my-style-advanced.netlify.app
+           • Java → java-in-my-style.netlify.app
+           • Python → python-in-my-styles.netlify.app
+           • ML, AI, DL, DSC, C → Following same pattern
            
            Happy Learning! 📚
         `);

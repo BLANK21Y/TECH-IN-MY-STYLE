@@ -1241,7 +1241,7 @@
           }
         }
 
-        /* Footer */
+        /* IMPROVED FOOTER SECTION */
         .footer {
           background: linear-gradient(135deg, var(--primary), var(--secondary));
           color: white;
@@ -1262,30 +1262,46 @@
 
         .footer-brand p {
           opacity: 0.9;
+          font-size: 1rem;
         }
 
         .footer-links {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-          gap: var(--spacing-lg);
+          grid-template-columns: repeat(3, 1fr);
+          gap: var(--spacing-xl);
         }
 
         .footer-column h4 {
           margin-bottom: var(--spacing-md);
           font-weight: 600;
+          font-size: 1.1rem;
+          border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+          padding-bottom: var(--spacing-xs);
+          display: inline-block;
         }
 
         .footer-column a {
           color: white;
           text-decoration: none;
           opacity: 0.8;
-          transition: opacity 0.3s ease;
+          transition: all 0.3s ease;
           display: block;
           margin-bottom: var(--spacing-xs);
+          padding: var(--spacing-xs) 0;
+          border-radius: var(--radius-sm);
+          font-size: 0.9rem;
         }
 
         .footer-column a:hover {
           opacity: 1;
+          background: rgba(255, 255, 255, 0.1);
+          padding-left: var(--spacing-sm);
+          transform: translateX(5px);
+        }
+
+        .footer-column a i {
+          margin-right: var(--spacing-xs);
+          width: 16px;
         }
 
         .footer-bottom {
@@ -1313,17 +1329,93 @@
           transform: translateY(-3px);
         }
 
+        /* MOBILE FOOTER OPTIMIZATION */
         @media (max-width: 768px) {
           .footer-content {
             grid-template-columns: 1fr;
             text-align: center;
-            gap: var(--spacing-lg);
+            gap: var(--spacing-xl);
+          }
+
+          .footer-brand {
+            margin-bottom: var(--spacing-lg);
+          }
+
+          .footer-links {
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+            text-align: left;
+          }
+
+          .footer-column {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            margin-bottom: var(--spacing-md);
+          }
+
+          .footer-column h4 {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            font-size: 1.2rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: var(--spacing-sm);
+            width: 100%;
+          }
+
+          .footer-column a {
+            font-size: 1rem;
+            padding: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+          }
+
+          .footer-column a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(0);
+            padding-left: var(--spacing-md);
           }
 
           .footer-bottom {
             flex-direction: column;
             gap: var(--spacing-md);
             text-align: center;
+          }
+
+          .footer-bottom p {
+            font-size: 0.9rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .footer {
+            padding: var(--spacing-xl) 0 var(--spacing-md);
+          }
+
+          .footer-content {
+            gap: var(--spacing-lg);
+          }
+
+          .footer-column {
+            padding: var(--spacing-md);
+          }
+
+          .footer-column h4 {
+            font-size: 1.1rem;
+          }
+
+          .footer-column a {
+            font-size: 0.95rem;
+            padding: var(--spacing-sm);
+          }
+
+          .scroll-top {
+            width: 45px;
+            height: 45px;
           }
         }
 
@@ -1739,13 +1831,13 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- IMPROVED FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>TECH IN MY STYLE</h3>
-                    <p>Empowering the next generation of developers</p>
+                    <p>Empowering the next generation of developers with hands-on learning experiences and industry-recognized certifications.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
@@ -1753,27 +1845,28 @@
                         <a href="">HOME</a>
                         <a href="courses.html">COURSES</a>
                         <a href="certifications.html">CERTIFICATIONS</a>
-                        <a href="stay-connected.html">STAY-CONNECTED</a>
+                        <a href="about-us.html">ABOUT US</a>
+                        <a href="stay-connected.html">STAY CONNECTED</a>
                     </div>
                     <div class="footer-column">
                         <h4>Courses</h4>
-<a href="https://html-in-my-style.netlify.app">HTML IN MY STYLE</a>
-<a href="https://css-in-my-style.netlify.app">CSS IN MY STYLE</a>
-<a href="https://javascript-in-my-style-basic.netlify.app">JS IN MY STYLE (BASIC)</a>
-<a href="https://javascript-in-my-style-advanced.netlify.app">JS IN MY STYLE (INTERMEDIATE)</a>
-<a href="https://c-in-my-style.netlify.app">C IN MY STYLE</a>
-<a href="https://java-in-my-style.netlify.app">JAVA IN MY STYLE</a>
-<a href="https://python-in-my-style.netlify.app">PYTHON IN MY STYLE</a>
-<a href="https://ml-in-my-style.netlify.app">ML IN MY STYLE</a>
-<a href="https://deeplearning-in-my-style.netlify.app/">DL IN MY STYLE</a>
-<a href="https://datascience-in-my-style.netlify.app">DSC IN MY STYLE</a>
-<a href="https://ai-in-my-style.netlify.app">AI IN MY STYLE</a>
+                        <a href="https://html-in-my-style.netlify.app">HTML IN MY STYLE</a>
+                        <a href="https://css-in-my-style.netlify.app">CSS IN MY STYLE</a>
+                        <a href="https://javascript-in-my-style-basic.netlify.app">JS IN MY STYLE (BASIC)</a>
+                        <a href="https://javascript-in-my-style-advanced.netlify.app">JS IN MY STYLE (INTERMEDIATE)</a>
+                        <a href="https://c-in-my-style.netlify.app">C IN MY STYLE</a>
+                        <a href="https://java-in-my-style.netlify.app">JAVA IN MY STYLE</a>
+                        <a href="https://python-in-my-style.netlify.app">PYTHON IN MY STYLE</a>
+                        <a href="https://ml-in-my-style.netlify.app">ML IN MY STYLE</a>
+                        <a href="https://deeplearning-in-my-style.netlify.app/">DL IN MY STYLE</a>
+                        <a href="https://datascience-in-my-style.netlify.app">DSC IN MY STYLE</a>
+                        <a href="https://ai-in-my-style.netlify.app">AI IN MY STYLE</a>
                     </div>
                     <div class="footer-column">
                         <h4>Support</h4>
                         <a href="https://www.instagram.com/tech_in_my_style?igsh=MWVpb2dzcmhwZ2NicQ=="><i class="fab fa-instagram"></i> Instagram</a>
                         <a href="https://youtube.com/@tech-in-my-style?si=G48ugz-d8oO7-4Dw"><i class="fab fa-youtube"></i> YouTube</a>
-                        <a href="https://whatsapp.com/channel/0029VbAZrCD5fM5aOU10Av0d"><i class="fab fa-whatsapp"></i> Whatsapp</a>
+                        <a href="https://whatsapp.com/channel/0029VbAZrCD5fM5aOU10Av0d"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                         <a href="https://t.me/Tech_in_my_style_bot"><i class="fab fa-telegram"></i> Telegram</a>
                     </div>
                 </div>
@@ -2068,15 +2161,15 @@
         });
 
         console.log(`
-        🚀 TECH IN MY STYLE - Optimized Loading!
+        🚀 TECH IN MY STYLE - Mobile Footer Optimized!
            
-           ✅ Reduced AOS Lazy Loading
-           ✅ Immediate Hero Section Load
-           ✅ Faster Intersection Observer
-           ✅ Preloaded Critical Sections
-           ✅ Enhanced Performance
+           ✅ Proper Mobile Footer Layout
+           ✅ Organized Sections with Background Cards
+           ✅ Better Visual Separation
+           ✅ Improved Typography & Spacing
+           ✅ Enhanced Mobile UX
            
-           Complete Code with Better Loading! ⚡
+           Complete Code with Perfect Footer! ⚡
         `);
     </script>
 </body>
